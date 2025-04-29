@@ -23,10 +23,7 @@ document.querySelector(".heading").addEventListener("mouseover", () => {
 
 document.querySelector("#paragraph").innerText = "Welcome to Javascript course";
 
-/* document.querySelector(".time").addEventListener("click", () => {
+document.querySelector("#button").addEventListener("click", (e) => {
   alert(Date());
-}); */
-
-document.querySelector("#button").addEventListener("click", (event) => {
-  console.log("hello", event);
+  console.log(e);
 });
