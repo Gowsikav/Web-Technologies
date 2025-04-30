@@ -1,0 +1,35 @@
+.para {
+    color: #000;
+    background-color: rgb(89, 161, 224);
+  }
+
+  .evenPara {
+    color: rgb(202, 223, 93);
+    background-color: rgb(190, 72, 164);
+    font-size: 25px;
+    font-style: italic;
+  }
+  .oddPara {
+    color: rgb(55, 43, 226);
+    font-family: fantasy;
+    font-size: 20px;
+  }
+
+  .firstClass {
+    background-color: aquamarine;
+    color: rgb(69, 47, 214);
+    font-style: oblique;
+  }
+
+  #firstId {
+    color: rgb(230, 160, 31);
+    border: red solid 2px;
+  }
+
+  #secondId {
+    background-color: blueviolet;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  #thirdId {
+    color: darkcyan;
+  }
