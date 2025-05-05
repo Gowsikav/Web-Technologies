@@ -4,33 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        *{
-            padding: 0%;
-            margin: 5px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        padding-top: 80px;
+        font-family: sans-serif;
+        overflow-x: hidden;
+      }
+
       nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         background-color: rgb(151, 151, 241);
-        padding: 25px;
+        padding: 20px;
         display: flex;
         justify-content: end;
       }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+      }
+
       li {
+        font-size: 20px;
+      }
+
+      li a {
+        text-decoration: none;
         color: rgb(1, 1, 21);
-        display:inline;
-        font-size: 30px;
-        padding: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      div {
+        height: 500px;
+        border: 2px solid red;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        scroll-margin-top: 80px;
       }
     </style>
   </head>
   <body>
     <nav>
-      <ul type="none">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Gallery</li>
+      <ul>
+        <li>
+          <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        </li>
+        <li>
+          <a href="#gallery"><i class="fa-brands fa-envira"></i>Gallery</a>
+        </li>
       </ul>
     </nav>
+
+    <div id="home"><p>Home</p></div>
+    <div id="about"><p>About</p></div>
+    <div id="contact"><p>Contact</p></div>
+    <div id="gallery"><p>Gallery</p></div>
   </body>
 </html>
