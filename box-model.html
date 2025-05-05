@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxModel</title>
+    <style>
+      #margin {
+        border: black solid 2px;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 25px;
+        background-color: red;
+      }
+      #padding {
+        border: black solid 2px;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        padding: 20px;
+        background-color: green;
+      }
+      #content {
+        border: black solid 3px;
+        margin: 11px;
+        padding: 45px;
+        background-color: blue;
+        color: white;
+        font-family: cursive;
+        font-style:italic;
+        font-weight: 200;
+        font-size: large;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="margin">
+      <div id="border">
+        <div id="padding">
+          <p id="content">Hello</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
