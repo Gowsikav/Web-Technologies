@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+</head>
+
+<body>
+    <h1>Welcome to Form filling</h1>
+
+    <form>
+        <input type="text" id="name" placeholder="Enter name" oninput="checkName()" />
+        <span id="nameError" style="color:red"></span>
+
+        <br><br>
+
+        <input type="radio" name="gender" onchange="formValidate()"> Male
+        <input type="radio" name="gender" onchange="formValidate()"> Female
+        <span id="genderError" style="color:red"></span>
+
+        <br><br>
+
+        <input type="checkbox" id="java" onchange="validateCheckbox()"> Java
+        <input type="checkbox" id="python" onchange="validateCheckbox()"> Spring boot
+        <input type="checkbox" id="js" onchange="validateCheckbox()"> JavaScript
+
+        <br><br>
+        <span id="checkError" style="color:red"></span>
+        <br><br>
+
+        <button id="subBtn" type="submit">Submit</button>
+    </form>
+
+
+    <script src="higher-order.js"></script>
+    <script src="from-validate.js"></script>
+</body>
+
+</html>
